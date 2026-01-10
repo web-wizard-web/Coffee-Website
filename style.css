@@ -1,0 +1,138 @@
+:root{
+    --coffee-dark: #3e2723;
+    --coffee-medium: #6f4e37;
+    --coffee-light: #C4A484;
+    --coffee-accent:#D2b48C;
+    --coffee-cream :#F5f5dc;
+    --coffee-gold:#D4af37;
+    --text-dark:#2C2416;
+    --text-light:#f3f3f3;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+font-family: "Montserrat" , sans-serif;
+background: var(--coffee-cream);
+color: var(--text-dark);
+line-height: 1.7;
+overflow-x: hidden;
+}
+
+.container{
+    width : 90%;
+    max-width: 1200 px;
+    margin: 0 auto;
+}
+
+/* header & nav */
+header{
+    background: #e2e2e1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    /* transition: all 0.5s ease; */
+}
+
+.header-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+
+}
+
+.logo-icon{
+    color: var(--coffee-gold);
+    font-size: 28px;
+
+}
+
+.logo-text{
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color:var(--coffee-dark);
+    letter-spacing: 1px;
+}
+.logo-text span{
+    color: var(--coffee-gold);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--coffee-medium);
+    font-weight: 500;
+    font-size: 20px;
+    position:relative;
+    padding: 5px 0;
+
+}
+
+nav a:after{
+ content : "";
+ position: absolute;
+ bottom : 0;
+ left:0;
+ width : 0;
+ height: 2px;
+ background: var(--coffee-gold);
+ transition: width 0.3s ease;
+
+}
+
+nav a:hover:after{
+    width: 100%;
+}
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--coffee-medium);
+    color: var(--text-light);
+}
+.btn-primary:hover{
+    background-color: var(--coffee-dark);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--coffee-medium);
+    border: 2px solid var(--coffee-medium);
+}
+.btn-secondary:hover {
+    background-color: rgba(39, 9, 9, 0.358);
+    color: var(--text-light);
+    transform: translateY(-3px);
+}
