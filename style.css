@@ -214,3 +214,139 @@ color:var(--coffee-gold)
 .main-img{
     margin-left: 60px;
 }
+
+/* Products section */
+.products{
+    padding : 100px 0;
+    position: relative;
+    background-color: #161515;
+    border-top: 4px solid var(--coffee-gold);
+    
+}
+
+.section-header{
+    text-align: center;
+    max-width: 700px;
+    margin : 0 auto 70px;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    color : var(--coffee-gold);
+    margin-bottom: 20px;
+ 
+}
+
+.section-title{
+    font-size: 42px;
+    color: var(--coffee-gold);
+    margin-bottom: 20px;
+    position : relative;
+    display :inline-block;
+}
+
+.section-title::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:80px;
+    height:3px;
+    background: var(--coffee-gold);
+
+}
+
+.section-desc{
+    font-size: 18px;
+    color: var(--text-light);
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+.product-card{
+    background: var(--coffee-dark);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position:relative;
+}
+
+.product-card:hover{
+    transform: translateY(-15px);
+    border:2px solid var(--coffee-gold);
+}
+
+.product-img 
+{
+    height : 280px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.product-card :hover .product-img img
+ {
+   transform: scale(1.05);
+   position: relative;
+}
+
+.product-tag {
+    position: absolute;
+    top: -5px;
+    right : 25 px ;
+    background: var(--coffee-gold);
+    color: #f3f3f3;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.product-title {
+    font-size: 24px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+
+}
+
+.product-desc {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.product-footer{
+    display: flex;
+    color: var(--coffee-gold);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price{
+    font-size: 24px;
+    font-weight: 700;
+    color:var(--coffee-gold)
+}
+
+.rating{
+    color:var(--coffee-gold);
+    font-size: 16px;
+
+}
+
+h1,h2,h3,h4{
+    font-family: 'Playfair Display' , serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
